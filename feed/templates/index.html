@@ -1,0 +1,16 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+
+<div id="container">
+    {% for message in messages %}
+        <div>
+            <div class="message_header">
+                <div class="message_username">{{ message.username }}</div>
+                <div class="message_created_at">{{ message.created_at }}</div>
+            </div>
+            <div class="message_content">{{ message.content }}</div>
+            <hr />
+        </div>
+    {% endfor %}
+</div>
