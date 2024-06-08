@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 from feed.models import Message
 
 def index(request):
@@ -13,3 +14,13 @@ def index(request):
     context['messages'] = Message.objects.order_by('-created_at')
 
     return render(request, 'index.html', context=context)
+
+
+def details(request, id):
+    context = {}
+    context['message'] = Message.objects.get(id=id)
+    context['comments'] = Message.objects.filter(response_to=id)
+
+    print(context)
+
+    return render(request, 'details.html', context=context)
