@@ -1,0 +1,5 @@
+<form action="{{action}}" method="POST">
+    {% csrf_token %}
+    <input type="text" name="content" />
+    <input type="submit" value="Poster" />
+</form>

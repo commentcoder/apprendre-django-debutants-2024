@@ -13,10 +13,15 @@ def index(request):
 
     context['messages'] = Message.objects.order_by('-created_at')
 
-    return render(request, 'index.html', context=context)
+    return render(request, 'message_list.html', context=context)
 
 
 def details(request, id):
+    if request.method == 'POST':
+        content = request.POST.get('content')
+        user = request.user
+        Message.objects.create(content=content, user=user, response_to=Message.objects.get(id=id))
+
     context = {}
     context['message'] = Message.objects.get(id=id)
     context['comments'] = Message.objects.filter(response_to=id)
