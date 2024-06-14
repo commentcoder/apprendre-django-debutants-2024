@@ -17,6 +17,12 @@ def index(request):
 
 
 def details(request, id):
+    if request.method == 'POST':
+        content = request.POST.get('content')
+        user = request.user
+
+        Message.objects.create(content=content, user=user, response_to_id=id)
+
     context = {}
     context['message'] = Message.objects.get(id=id)
     context['comments'] = Message.objects.filter(response_to=id)
