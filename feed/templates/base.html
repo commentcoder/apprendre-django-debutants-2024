@@ -7,11 +7,26 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
 </head>
 <body>
-<nav>
-    <a href="/">Accueil</a>
-    <a href="/admin/">Admin</a>
-</nav>
-{% block content %}
-{% endblock %}
+<header>
+    <div id="header_container">
+    <h1>Feed</h1>
+    <nav id="nav_bar">
+        <a href="/">Accueil</a>
+        <a href="/admin/">Admin</a>
+        {% if request.user.is_authenticated %}
+            <div class="avatar_container">
+                <span>@{{ request.user.username }}</span>
+                <img class="user_avatar" src="{% static 'images/commentcoder.com.jpg' %}" alt="{{ request.user.username }}" />
+            </div>
+            {% else %}
+            <a href="/admin/login/?next=/">Se connecter</a>
+            {% endif %}
+    </nav>
+        </div>
+</header>
+<div id="container">
+    {% block content %}
+    {% endblock %}
+</div>
 </body>
 </html>

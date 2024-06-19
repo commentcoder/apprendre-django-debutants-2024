@@ -3,7 +3,7 @@
 {% block content %}
 <div>{% include 'form.html' with action='/' %}</div>
 
-<div id="container">
+<div>
     {% for message in messages %}
         <div>{% include 'message.html' with message=message %}</div>
     {% endfor %}
