@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -9,11 +9,11 @@
 <body>
 <header>
     <div id="header_container">
-    <h1>Feed</h1>
-    <nav id="nav_bar">
-        <a href="/">Accueil</a>
-        <a href="/admin/">Admin</a>
-        {% if request.user.is_authenticated %}
+        <h1>Feed</h1>
+        <nav id="nav_bar">
+            <a href="/">Accueil</a>
+            <a href="/admin/">Admin</a>
+            {% if request.user.is_authenticated %}
             <div class="avatar_container">
                 <span>{{ request.user.username }}</span>
                 <img class="user_avatar" src="{% static 'images/commentcoder.com.jpg' %}" alt="{{ request.user.username }}" />
@@ -21,12 +21,14 @@
             {% else %}
             <a href="/admin/login/?next=/">Se connecter</a>
             {% endif %}
-    </nav>
-        </div>
+        </nav>
+    </div>
 </header>
 <div id="container">
     {% block content %}
     {% endblock %}
 </div>
+
+
 </body>
 </html>

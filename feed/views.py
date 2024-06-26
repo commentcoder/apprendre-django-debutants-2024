@@ -13,7 +13,7 @@ def index(request):
 
     context['messages'] = Message.objects.order_by('-created_at')
 
-    return render(request, 'index.html', context=context)
+    return render(request, 'message_list.html', context=context)
 
 
 def details(request, id):

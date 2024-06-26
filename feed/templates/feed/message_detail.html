@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div>{% include 'form.html' with action=request.path %}</div>
+
+<div>
+    <div>{% include 'message.html' with message=message %}</div>
+    {% for comment in comments %}
+        <div>{{ comment.user.username }}</div>
+        <div>{{ comment.created_at }}</div>
+        <div>{{ comment.content }}</div>
+    {% endfor %}
+</div>
+{% endblock %}
