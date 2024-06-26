@@ -1,4 +1,4 @@
-Lien vers la vidéo : WIP
+Lien vers la vidéo : [Apprendre Django en 1 heure - Cours complet développement web en Python pour débutants en 2024](https://www.youtube.com/watch?v=xJNvJaLl8bU)
 
 ## Série en plusieurs vidéos
 
@@ -11,3 +11,5 @@ Code et solutions des exercices et projets de la série de vidéos [Apprendre Dj
 - [Partie 5 - L'ORM de Django et afficher des objets sur une page HTML](https://github.com/commentcoder/apprendre-django-debutants-2024/tree/partie_5_orm)
 - [Partie 6 - Formulaires HTML et méthode POST](https://github.com/commentcoder/apprendre-django-debutants-2024/tree/partie_6_post)
 - [Partie 7 - Fichiers URLs et URLs avec paramètres](https://github.com/commentcoder/apprendre-django-debutants-2024/tree/partie_7_urls)
+- [Partie 7 - Blocs Extends et Includes en Django](https://github.com/commentcoder/apprendre-django-debutants-2024/tree/partie_8_blocs)
+- [Partie 9 - Conclusion](https://github.com/commentcoder/apprendre-django-debutants-2024/tree/partie_9_conclusion)
