@@ -15,7 +15,7 @@
         <a href="/admin/">Admin</a>
         {% if request.user.is_authenticated %}
             <div class="avatar_container">
-                <span>@{{ request.user.username }}</span>
+                <span>{{ request.user.username }}</span>
                 <img class="user_avatar" src="{% static 'images/commentcoder.com.jpg' %}" alt="{{ request.user.username }}" />
             </div>
             {% else %}
