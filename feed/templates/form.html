@@ -1,5 +1,9 @@
-<form action="{{action}}" method="POST">
+{% if request.user.is_authenticated %}
+<form action="{{ action }}" method="POST" id="form_container">
     {% csrf_token %}
-    <input type="text" name="content" />
-    <input type="submit" value="Poster" />
+    <input type="text" name="content" id="form_content" />
+    <input type="submit" value="Poster" id="form_button" />
 </form>
+{% else %}
+<div id="form_unauthenticated">Veuillez <a href="/admin/?next=/">vous connecter</a></div>
+{% endif %}
