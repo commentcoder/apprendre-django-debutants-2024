@@ -1,7 +1,7 @@
-[![Apprendre Django en 1 heure - Cours complet développement web en Python pour débutants en 2024](apprendre-django-1-heure-debutants.jpg)](https://www.youtube.com/watch?v=xJNvJaLl8bU)
+[![Apprendre Django en 1 heure - Cours complet développement web en Python pour débutants en 2024](apprendre-django-1-heure-debutants.jpg)](https://www.youtube.com/watch?v=xJNvJaLl8bU&list=PLeXyx0kOyiXtMBudGqaM8FSEZOlj98azp&index=2)
 
 Lien vers la vidéo : 
-- [Apprendre Django en 1 heure - Cours complet développement web en Python pour débutants en 2024](https://www.youtube.com/watch?v=xJNvJaLl8bU)
+- [Apprendre Django en 1 heure - Cours complet développement web en Python pour débutants en 2024](https://www.youtube.com/watch?v=xJNvJaLl8bU&list=PLeXyx0kOyiXtMBudGqaM8FSEZOlj98azp&index=2)
 
 ## Série en plusieurs vidéos
 
